@@ -1,0 +1,347 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: white;
+}
+body {
+    background-color: #141C29;
+    padding-top: 80px;
+    font-family: Arial;
+    text-align: center;
+}
+header{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap:15%;
+  height: 70px;
+  top: 0;
+  position: fixed;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  z-index: 1000;
+}
+h1{
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+    box-sizing: border-box;
+}
+img {
+    width: 320px;
+    height: 340px;
+    object-fit: cover;
+    border-radius: 20px 20px 0px 0px;
+}
+.titulo{
+    color: #333;
+    background-color: aliceblue;
+    box-shadow: .1rem .2rem .3rem #333;
+}     
+.titulo h1{
+    color: #141C29;
+}
+.carrito{
+    filter: invert(100%);
+    width: 45px;
+    height: auto;
+}
+.contenedor {
+  display: flex;
+  position: relative;
+  flex-wrap: wrap;
+  margin-top: 20px;
+  padding-top: 40px;
+  justify-content: center;
+  gap: 50px;
+  margin-bottom: 20px;
+}
+.form {
+  display: flex;
+  position: relative;
+  flex-wrap: wrap;
+  margin-top: 20px;
+  padding-top: 40px;
+  justify-content: center;
+  gap: 50px;
+  margin-bottom: 20px;
+}
+.contenedor>div{
+  box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.75);
+  background-color: #2D4263;
+  border-radius: 20px;
+}
+.contenedor>div:hover{
+  background-color: #11294d;
+}
+.producto {
+  position: relative;
+  cursor: pointer;
+  overflow: hidden; /* Asegura que la descripción no se desborde fuera del producto */
+}
+.producto img {
+  transition: filter 0.3s ease; /* Transición para el efecto de oscurecimiento */
+}
+.descripcion {
+  display: none;
+  position: absolute;
+  font-size: 25px;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  padding: 10px;
+  border-radius: 5px;
+  width: 80%; /* Ajusta el ancho de la descripción según sea necesario */
+  text-align: center; /* Centra el texto */
+  z-index: 1;
+}
+.producto:hover img {
+  filter: brightness(0.5); /* Oscurece más la imagen al pasar el mouse sobre ella */
+}
+.informacion{
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap:15px;
+}
+.informacion>p:first-child{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 25px;
+    font-weight: 300;
+}
+.informacion .precio {
+    font-size: 20px;
+    font-weight: 500;
+}
+.informacion .precio span{
+    font-size: 17px;
+    font-weight: 300;
+}
+.informacion button{
+    background-color: #263143;
+    width: 100px;
+    height: 35px;
+    border-radius: 10px;
+    border: none;
+
+    font-size: 17px;
+    font-weight: 300;
+    cursor: pointer;
+}
+.informacion button:hover{
+    background-color: #2D4263;
+}
+#sushiForm {
+    background-color: #fff; /* Fondo blanco para el formulario */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    display: inline-block;
+    }
+label {
+    display: block;
+    margin-bottom: 8px;
+    font-family: 'Montserrat';
+    }
+select, input {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 12px;
+    box-sizing: border-box;
+    color: #333; /* Color del texto en negro */
+    }
+#totalPrice {
+    font-weight: bold;
+    margin-top: 10px;
+    color:#ffffff;
+    }
+.kindOf{
+  color:#333;
+}
+.precio{
+  font-family: 'Montserrat';
+}
+.seccion1 {
+  font-family: Arial, sans-serif;
+  margin: 10px;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 50hv;
+    
+}
+.formulario1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.nombre {
+    margin-bottom: 5px;
+}
+.boton-estilizado {
+    font-family: 'Montserrat';
+    background-color: #6c6c7c; 
+    border: none; 
+    color: #141C29; 
+    padding: 15px 32px; 
+    text-align: center; 
+    text-decoration: none; 
+    display: inline-block; 
+    font-size: 16px; 
+    margin: 4px 2px; 
+    cursor: pointer;
+    border-radius: 8px; 
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease; 
+}
+.boton-estilizado:hover {
+    background-color: #afafc2; /* Cambio de color al pasar el ratón */
+}
+.opcion{
+    color: #333;
+}
+.pedido-final {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+  }
+.finalizar-pedido {
+    background-color: #2D4263;
+    border: 1px solid #ced4da;
+    border-radius: 5px;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    max-width: 800px;
+    margin: 0 auto;
+  }
+.total {
+    color: rgb(255, 255, 255);
+    font-size: 20px;
+    font-weight: bold;
+    background-color: green;
+  }
+.monto {
+    color: rgb(255, 255, 255);
+    font-size: 20px;
+    background-color: red;
+  }
+.items th{
+    color: rgb(255, 255, 255);
+    font-size: 20px;
+    padding: 15px;
+    font-family: 'Montserrat';
+  }
+.icono-eliminar {
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+    font-weight: bolder;
+  }
+td{
+    font-size: 20px;
+    padding: 15px;
+  }
+.form-cliente {
+    padding-top: 10px;
+    margin-bottom: 10px;
+  }
+.table td , 
+.table th{
+    border-top: 1px solid #ccc; 
+    border-left: none;
+    border-right: none; 
+    border-spacing: 0;
+  }
+ #datosCliente {
+    background-color: #2D4263;
+    border: 1px solid #ced4da;
+    border-radius: 5px;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+    margin: 0 auto;
+  }
+  #datosCliente h3 {
+    font-size: 20px;
+    margin-bottom: 15px;
+    text-align: center;
+    font-family: 'Montserrat';
+  }
+  #datosCliente input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ced4da;
+    border-radius: 5px;
+    box-sizing: border-box;
+    font-size: 16px;
+  }
+  #datosCliente button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
+  }
+  #datosCliente button:hover {
+    background-color: #0056b3;
+  }
+.cantidad-container {
+    align-items: center;
+}
+.aumentar-cantidad,
+.disminuir-cantidad {
+    background-color: #ffffff;
+    color:#141C29;
+    border: none;
+    border-radius: 5px;
+    padding: 5px 10px;
+    font-size: 18px;
+    cursor: pointer;
+    margin: 0 5px;
+}
+.aumentar-cantidad:hover,
+.disminuir-cantidad:hover {
+    background-color: #1E2D44;
+}
+.aumentar-cantidad:focus,
+.disminuir-cantidad:focus {
+    outline: none;
+}
+.cantidad-container span {
+    margin: 0 5px;
+    font-weight: bold;
+}
+#mensaje-bienvenida {
+    background-color: #2D4263;
+    font-family: 'Montserrat';
+    margin: 0 auto 20px auto;
+    border-radius: 10px;
+    padding: 20px;
+    width: 60%;
+    margin-bottom: 20px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+    text-align: center;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+  }
+  #mensaje-bienvenida p {
+    font-size: 18px;
+    color: #FFFFFF;
+    margin: 0;
+  }
+  #mensaje-bienvenida:hover {
+    background-color: #1A2B42;
+    transform: translateY(-5px);
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.5);
+  }

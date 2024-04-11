@@ -1,0 +1,48 @@
+[
+    {
+        "title": "Buenos Aires roll",
+        "price": 8700,
+        "img": "images/buenos-aires.webp",
+        "description": "Salmón, langostinos, palta, philadelphia y salsa de sésamo"
+    }, {
+        "title": "California roll",
+        "price": 8430,
+        "img": "images/california.webp",
+        "description": "Kanikama, Palta y Pepino"
+    }, {
+        "title": "Honey roll",
+        "price": 8900,
+        "img": "images/honey.webp",
+        "description": "Langostino crocante, con salsa de miel y mostaza."
+    }, {
+        "title": "Philadelphia roll",
+        "price": 6500,
+        "img": "images/phila-roll.webp",
+        "description": "Salmón, philadelphia."
+    }, {
+        "title": "New York roll",
+        "price": 7600,
+        "img": "images/rolls-new-york.jpg",
+        "description": "Salmón y palta."
+    }, {
+        "title": "Salmon roll",
+        "price": 9600,
+        "img": "images/salmon-y-olivada.webp",
+        "description": "Langostinos y palta. Por fuera crema cítrica, tartare de salmón y ralladura de lima."
+    }, {
+        "title": "Smoked roll",
+        "price": 7850,
+        "img": "images/smoked.jpg",
+        "description": "Salmon ahumado, palta"
+    }, {
+        "title": "Spicy roll",
+        "price": 8900,
+        "img": "images/spicy.jpg",
+        "description": "cheddar vegano - caponatta de morrones - cebolla morada - guacamole -nachos crocantes - semillas pipian - togarashi"
+    }, {
+        "title": "Tuna roll",
+        "price": 6700,
+        "img": "images/tuna.webp",
+        "description": "Atún, Tofu, cherry, rucula, palta, rabanito, semillas, oliva, pepper"
+    }
+]

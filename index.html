@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="./style/styles.css" rel="stylesheet" type="text/css" />
+  <title>Sakura Sushi House</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&display=swap"
+    rel="stylesheet" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap"
+    rel="stylesheet" />
+  <link rel="icon" type="image/x-icon" href="images/iconosushi.png" />
+  <link href="https://cdn.jsdelivr.net/npm/@sweetalert2/theme-dark@4/dark.css" rel="stylesheet">
+</head>
+
+<body>
+  <header class="titulo" >
+    <h1>Delivery de sushi</h1>
+  </header> 
+<br/>
+  <div id="mensaje-bienvenida">
+    <p>Bienvenido a Sakura Sushi House. ¡Disfruta de nuestra deliciosa variedad de sushi! Los pedidos son unicamente para delivery y con pago en efectivo.</p>
+  </div>
+  <button class="boton-estilizado" id="hacerPedidoBtn">Hace tu pedido</button>
+
+  <div id="imagenes" class="contenedor"></div>
+  <br/>
+
+  <section class="seccion1" id="pedidoSection">
+    <form class="formulario1">
+      <h3 id="hola" class="nombre" for="tipoSushi">Rolls</h3> 
+      <select id="selection" name="tipoSushi">
+        <option class="opcion" value="Buenos Aires roll">
+          Buenos Aires roll (10 u.)
+        </option>
+        <option class="opcion" value="California roll">
+          California roll (10 u.)
+        </option>
+        <option class="opcion" value="Honey roll">Honey roll (10 u.)</option>
+        <option class="opcion" value="Philadelphia roll">
+          Philadelphia roll (10 u.)
+        </option>
+        <option class="opcion" value="New York roll">
+          New York roll (10 u.)
+        </option>
+        <option class="opcion" value="Salmon roll">
+          Salmon roll (10 u.)
+        </option>
+        <option class="opcion" value="Smoked roll">
+          Smoked roll (10 u.)
+        </option>
+        <option class="opcion" value="Spicy roll">Spicy roll (10 u.)</option>
+        <option class="opcion" value="Tuna roll">Tuna roll (10 u.)</option>
+      </select>
+      <label class="nombre" for="cantidad"><h3>Porcion</h3></label>
+      <input id="cantidad" class="texto" type="number" name="cantidad" min="1" value="1"/>
+
+      <div class="precio" id="priceByUnit">Precio por porción: $0</div>
+      <div class="precio" id="totalPrice">Precio total: $0</div>
+<br/>
+      <button id="agregar" class="boton-estilizado" type="button" value="Agregar">
+        Agregar a la orden
+      </button>
+    </form>
+  </section>
+<br/>
+
+  <div class="pedido-final" id="pedido-final"></div>
+
+  <div id="container" class="form">
+   
+    <div id="datosCliente" style="display: none;">
+      <h3>Completa tus datos para finalizar el pedido: </h3>
+      <input type="text" id="nameSurname" placeholder="Nombre y Apellido">
+      <input type="text" id="phone" placeholder="Teléfono">
+      <input type="text" id="adress" placeholder="Dirección">
+      <button id="finish">Finalizar Pedido</button>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.min.js"></script>
+  <script src="javascript/cards.js"></script>
+  <script src="javascript/features.js"></script>
+  <script src="javascript/purchase.js" ></script>
+  <script src="javascript/form.js"></script>
+</body>
+
+</html>
